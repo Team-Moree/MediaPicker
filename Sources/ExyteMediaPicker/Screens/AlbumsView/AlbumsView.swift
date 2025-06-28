@@ -35,7 +35,7 @@ struct AlbumsView: View {
                     ProgressView()
                         .padding()
                 } else if viewModel.albums.isEmpty {
-                    Text("Empty data")
+                    Text(theme.text.main.emptyData)
                         .font(.title3)
                         .foregroundColor(theme.main.pickerText)
                 } else {
